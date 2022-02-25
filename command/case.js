@@ -609,24 +609,6 @@ if (!isHaruka) return sendButMessage(from, lang.noregis(pushname), `Klik Button 
 				}).catch((err) => reply(`Link tidak valid`))
 			
              break 
-case 'tiktokwm':
-if (!isHaruka) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
-			if (!q) return reply('Linknya?')
-			if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply('Invalid link')
-			reply(lang.wait())
-			let wem = args.join(' ')
-			zee.ttdownloader(wem)
-			.then(result => {
-				const { wm, nowm, audio } = result
-				axios.get(`https://tinyurl.com/api-create.php?url=${nowm}`)
-				.then(async (a) => {
-					me = `*Link* : ${a.data}`
-					weem = await getBuffer(wm)
-					haruka.sendMessage(from,weem , MessageType.document, {mimetype: 'video/mp4',filename: `Tiktok Wm.mp4`,quoted: mek})
-					})
-				}).catch((err) => reply(`Link tidak valid`))
-			
-             break 
 case 'tiktokmusic': case 'tiktokaudio':  
 if (!isHaruka) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
 			if (!q) return reply('Linknya?')
