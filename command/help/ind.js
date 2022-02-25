@@ -67,20 +67,11 @@ exports.menu = (prefix, salam, pushname) =>{
 ╭─⬣ *List Menu*
 │ • ${prefix}menu
 │ • ${prefix}help
-│ • ${prefix}haruka
 │
 ├ *Download*
 │ • ${prefix}play [query]
-│ • ${prefix}song [judul lagu]
 │ • ${prefix}pinterest [query]
-│ • ${prefix}ytmp3 [url]
-│ • ${prefix}ytmp4 [url]
-│ • ${prefix}tiktok [url]
-│ • ${prefix}tiktoknowm [url]
-│ • ${prefix}tiktokwm [url]
-│ • ${prefix}tiktokaudio [url]
-│ • ${prefix}soundcloud [url]
-│ • ${prefix}telesticker [url]
+│ • ${prefix}tiktoknowm [URL]
 │
 ├ *Convert*
 │ • ${prefix}stiker [video/image]
@@ -111,9 +102,7 @@ exports.menu = (prefix, salam, pushname) =>{
 ├ *Owner*
 │ • ${prefix}broadcast [text]
 │ • ${prefix}leave
-│ • >
-│ • $
-│ •  => 
+
 │
 ├ *Group*
 │ • ${prefix}antilink 1 / 0
